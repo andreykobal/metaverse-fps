@@ -1,25 +1,14 @@
-import logo from './logo.svg';
-import './App.css';
+import React from "react";
+import Unity, { UnityContent } from "react-unity-webgl";
 
-function App() {
-  return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
-    </div>
-  );
-}
+const unityContent = new UnityContent(
+  "build/asdasddas.json",
+  "build/UnityLoader.js"
+);
 
-export default App;
+const App = () => {
+  return <Unity unityContent={unityContent} height="100%" width="950px" />
+  ;
+};
+
+export default App
