@@ -2,7 +2,7 @@ import React from "react";
 import Unity, { UnityContent } from "react-unity-webgl";
 
 const unityContent = new UnityContent(
-  "build/asdasddas.json",
+  "build/game-fps.json",
   "build/UnityLoader.js"
 );
 
